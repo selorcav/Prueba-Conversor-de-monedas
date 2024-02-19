@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <title>Conversor de monedas nacionales</title>
+</head>
+
+<body class="bg-dark">
+  <div class="container vh-100 d-flex justify-content-center align-items-center">
+    <div class="col-12 col-md-7 ">
+      <h1 class="text-white text-center">Conversor de monedas Nacional</h1>
+      <hr class="text-white">
+      <div class="bg-light rounded-1 p-4">
+        <h4 class="text-center">Pesos CLP</h4>
+        <input placeholder="Ingresa un valor acá" id="valorCLP" class="border border-primary-subtle rounded-2 mx-auto d-block my-3 col-8" type="number">
+        <h4 class="text-center">Moneda a convertir</h4>
+        <select id="valorConvertir" class="border border-primary-subtle rounded-2 p-1 col-8 mx-auto d-block my-3" aria-label="Default select example">
+          <option value="" disabled selected>Selecciona una moneda</option>
+        </select>
+        <button id="botonConvertir" type="button" class="btn btn-primary col-8 mx-auto d-block mt-5 mb-3">Convertir</button>
+        <div id="textoConvertir" class="text-center my-3">...</div>
+
+
+        <div class="grafica">
+          <canvas id="myChart"></canvas>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <style>
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+      appearance: none;
+      margin: 0;
+    }
+
+    input[type=number] {
+      appearance: textfield;
+    }
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
